@@ -990,6 +990,48 @@ body {
     width: 100%;
     font-size: 12px;
   }
+
+  /* iPad Pro footer fix */
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-column:first-child {
+    display: none;
+  }
+
+  /* iPad Pro about section fix */
+  .about .service-item {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .about .service-image {
+    order: 1;
+  }
+
+  .about .service-content {
+    order: 2;
+  }
+
+  .about .service-image img {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .about .service-content h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .about .service-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1005,6 +1047,155 @@ body {
   .hero-description p {
     font-size: 11px;
   }
+
+  /* Footer fix for smaller screens */
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .footer-column:first-child {
+    display: none;
+  }
+
+  /* About section fix for smaller screens */
+  .about .service-item {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .about .service-image {
+    order: 1;
+  }
+
+  .about .service-content {
+    order: 2;
+  }
+
+  .about .service-image img {
+    width: 250px;
+    height: 180px;
+    margin: 0 auto;
+  }
+
+  .about .service-content h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .about .service-content p {
+    font-size: 14px;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width: 820px) {
+  /* iPad Air specific fixes */
+  .navbar-container {
+    height: 100px;
+  }
+
+  .navbar {
+    height: 100px;
+  }
+
+  .navbar-container::before,
+  .navbar-container::after {
+    height: 100px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .logo-subtext {
+    font-size: 8px;
+  }
+
+  .nav-items {
+    gap: 15px;
+  }
+
+  .nav-item {
+    font-size: 14px;
+  }
+
+  .enquire-btn {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  /* Service section - show smaller images */
+  .service-item {
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .service-image {
+    order: 1;
+  }
+
+  .service-content {
+    order: 2;
+  }
+
+  .service-image img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-content h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .service-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  /* Footer fix */
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .footer-column:first-child {
+    display: none;
+  }
+
+  /* About section fix */
+  .about .service-item {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .about .service-image {
+    display: none;
+  }
+
+  .about .service-content {
+    order: 1;
+  }
+
+  .about .service-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .about .service-content p {
+    font-size: 12px;
+    margin-bottom: 15px;
+    letter-spacing: 0px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -1019,6 +1210,48 @@ body {
 
   .hero-description p {
     font-size: 10px;
+  }
+
+  /* Footer fix for smaller screens */
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .footer-column:first-child {
+    display: none;
+  }
+
+  /* About section fix for smaller screens */
+  .about .service-item {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .about .service-image {
+    order: 1;
+  }
+
+  .about .service-content {
+    order: 2;
+  }
+
+  .about .service-image img {
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+  }
+
+  .about .service-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .about .service-content p {
+    font-size: 13px;
+    margin-bottom: 15px;
+    letter-spacing: 0px;
   }
 }
 
@@ -1065,6 +1298,93 @@ body {
 
   .logo-subtext {
     font-size: 10px;
+  }
+
+  /* Navbar fixes for smaller screens */
+  .navbar-container {
+    height: 100px;
+  }
+
+  .navbar {
+    height: 100px;
+  }
+
+  .navbar-container::before,
+  .navbar-container::after {
+    height: 100px;
+  }
+
+  .nav-items {
+    gap: 12px;
+  }
+
+  .nav-item {
+    font-size: 13px;
+  }
+
+  .enquire-btn {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+
+  /* Service section - show smaller images */
+  .service-item {
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .service-image {
+    order: 1;
+  }
+
+  .service-content {
+    order: 2;
+  }
+
+  .service-image img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-content h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .service-content p {
+    font-size: 13px;
+    margin-bottom: 18px;
+    letter-spacing: 0px;
+  }
+
+  /* About section - hide images, show only text */
+  .about .service-item {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .about .service-image {
+    display: none;
+  }
+
+  .about .service-content {
+    order: 1;
+  }
+
+  .about .service-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .about .service-content p {
+    font-size: 11px;
+    margin-bottom: 12px;
+    letter-spacing: 0px;
   }
 
   .service-item {
@@ -1117,6 +1437,43 @@ body {
   .footer::after {
     left: 5%;
     right: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Service section for very small screens */
+  .service-item {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .service-image {
+    order: 1;
+  }
+
+  .service-content {
+    order: 2;
+  }
+
+  .service-image img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+
+  .service-content h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .service-content p {
+    font-size: 12px;
+    margin-bottom: 15px;
+    letter-spacing: 0px;
   }
 }
 
